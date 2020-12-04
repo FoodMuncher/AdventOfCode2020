@@ -13,7 +13,6 @@ fn part_one() {
 }
 
 fn part_two() {
-    let mut tree_count: u32 = 1;
     const MOVES: [[usize; 2]; 5] = [
         [1, 1],
         [3, 1],
@@ -21,6 +20,7 @@ fn part_two() {
         [7, 1],
         [1, 2],
     ];
+    let mut tree_count: u32 = 1;
 
     for i in 0..5 {
         tree_count = tree_count * count_trees(MOVES[i][0], MOVES[i][1]);
