@@ -142,7 +142,7 @@ func partTwo() {
 		}
 	}
 
-	fmt.Println("Part One:", validDocuments)
+	fmt.Println("Part Two:", validDocuments)
 	return
 }
 

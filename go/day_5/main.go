@@ -103,7 +103,7 @@ func partTwo() {
 		}
 	}
 
-	fmt.Println("Part One:", seat)
+	fmt.Println("Part Two:", seat)
 	return
 }
 
