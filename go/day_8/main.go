@@ -6,7 +6,6 @@ import (
 	"log"
 	"os"
 	"strconv"
-	"time"
 )
 
 const notDiverged = 0
@@ -19,7 +18,6 @@ func main() {
 }
 
 func partOne() {
-	start := time.Now()
 	file, err := os.Open("code.txt")
 	check(err)
 	defer file.Close()
@@ -55,13 +53,11 @@ func partOne() {
 		}
 	}
 
-	duration := time.Since(start)
-	fmt.Println("Part One took", duration, "with answer:", accumulator)
+	fmt.Println("Part One:", accumulator)
 	return
 }
 
 func partTwo() {
-	start := time.Now()
 	file, err := os.Open("code.txt")
 	check(err)
 	defer file.Close()
@@ -127,8 +123,7 @@ func partTwo() {
 		}
 	}
 
-	duration := time.Since(start)
-	fmt.Println("Part Two took", duration, "with answer:", accumulator)
+	fmt.Println("Part Two:", accumulator)
 	return
 }
 
